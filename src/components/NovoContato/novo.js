@@ -1,22 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
-import 'material-icons/iconfont/material-icons.css';
-
+// import 'material-icons/iconfont/material-icons.css';
 
 export default function Novo() {
-
-    const incluir =[
-        {
-            nome: "Guilherme",
-            celular: "(85) 96473-2824",
-            cidade: "Fortaleza"
-        }
-    ];
-
-    function Adicionar(){
-
-    }
-
+ 
   return (
     <div>
       <h1 className="container text-center mt-5">Agenda Telefônica</h1>
@@ -31,12 +18,12 @@ export default function Novo() {
           <input className="form-control form-control-lg mb-3" type="text" placeholder="Cidade"/> 
           
           <div className="d-grid">
-          <button className="btn btn-lg btn-primary btn-md" onClick={incluir}>Enviar</button>
+          <button className="btn btn-lg btn-primary btn-md mb-3">Enviar</button>
+          <button className="btn btn-lg btn-primary btn-md">Lista de Contatos</button>
           </div>
         </form>
       </div>
     </div>
 
-  );
+);
 }
-
